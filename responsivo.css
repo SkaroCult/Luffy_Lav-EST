@@ -1,6 +1,6 @@
 @media(max-width: 450px){
     header{
-        padding: 10px;
+        padding: 30px 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,5 +34,27 @@
     }
     main section#sobre p{
         font-size: 14px;
+    }
+    main section#rotina ul#petsRotina li h2{
+        font-size: 17px;
+    }
+    main section#contato div#conteudoContatos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main section#contato div#conteudoContatos a{
+        font-size: 20px;
+        padding: 10px;
+        &:hover{
+            font-size: 20px;
+        }
+    }
+    main section#contato div#conteudoContatos div#barra{
+        width: 80%;
+        height: 3px;
+    }
+    footer{
+        display: block;
     }
 }

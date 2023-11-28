@@ -37,9 +37,11 @@ async function dias(){
     let diaJson = await semanaJson.dias
 
     console.info(diaJson)
+    console.info(diaHoje)
+
     if(diaHoje === "segunda"){
         return diaJson.segunda
-    }else if(diaHoje === "terca"){
+    }else if(diaHoje === "terça"){
         return diaJson.terca
     }else if(diaHoje === "quarta"){
         return diaJson.quarta
@@ -55,21 +57,22 @@ async function dias(){
 }
 
 async function insert(dias){
-    dias = await dias
-    console.info(dias)
+    diaJ = await dias
+
+    console.info(diaJ)
 
     let ul = document.getElementById("petsRotina")
     let h3 = document.getElementById("dia")
 
     h3.innerText = `Dia: ${diaHoje}`
 
-    if(dias.length === 1){
+    if(diaJ.length === 1){
         let hiden = document.querySelectorAll(".escondido")
 
         hiden[0].classList.remove("escondido")
         ul.classList.add("escondido")
     }else{
-        dias.forEach((nome) => {
+        diaJ.forEach((nome) => {
             console.log(nome)
             ul.innerHTML += `<li>
             <h2>${nome[0]}</h2>
