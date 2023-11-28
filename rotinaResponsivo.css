@@ -1,0 +1,90 @@
+@media(max-width: 850px){
+    section#rotina div#pets > div{
+        padding: 0;
+    }
+    section#rotina div#pets div.up{
+        width: 500px;
+        > div{
+            font-size: 20px;
+        }
+    }
+    section#rotina div#pets div.up h3{
+        font-size: 30px;
+    }
+    section#rotina div#pets div.down iframe{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media(max-width: 450px){
+    section a h1{
+        font-size: 27px;
+    }
+    section#menu section a{
+        &:first-child{
+            font-size: 20px;
+        }
+        &:last-child{
+            font-size: 20px;
+        }
+    }
+    section#rotina div#pets > div{
+        padding: 0;
+    }
+    section#rotina div#pets div.up{
+        width: 300px;
+        > div{
+            font-size: 17px;
+        }
+    }
+    section#rotina div#pets div.up h3{
+        font-size: 20px;
+    }
+    section#rotina div#pets div.down iframe{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media(max-width: 400px){
+    section a h1{
+        font-size: 27px;
+    }
+    section#menu section a{
+        &:first-child{
+            font-size: 20px;
+        }
+        &:last-child{
+            font-size: 20px;
+        }
+    }
+    section#rotina h2{
+        font-size: 30px;
+    }
+    section#rotina h3#dia{
+        font-size: 27px;
+    }
+    section#rotina div#pets > div{
+        padding: 0;
+    }
+    section#rotina div#pets div.up{
+        width: 200px;
+        > div{
+            font-size: 13px;
+        }
+    }
+    section#rotina div#pets div.up h3{
+        font-size: 17px;
+    }
+    section#rotina div#pets div.down iframe{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media(max-width: 350px){
+    section#menu section a{
+        &:first-child{
+            font-size: 15px;
+            margin:20px;
+        }
+    }
+}

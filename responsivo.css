@@ -1,0 +1,13 @@
+@media(max-width: 450px){
+    header{
+        display: block;
+        padding: 0;
+
+    }
+    main section#primeiro{
+        height: 80vh;
+    }
+    main section#primeiro h2{
+        font-size: 50px;
+    }
+}

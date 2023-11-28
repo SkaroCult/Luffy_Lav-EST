@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;900&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+/*Cabeçalho*/
+body{
+    overflow:  hidden scroll;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgb(184, 184, 184));
+    position: fixed;
+    width: 100vw;
+    height: 30%;
+    transition: 0.5s;
+}
+header.encurta{
+    background-color: white;
+    height: 20%;
+    border-bottom: 2px solid wheat;
+}
+header *{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header #logoPrincipal h1{
+    font-size: 30px;
+    margin: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+header ul li:first-child{
+    border-right: 2px solid;
+}
+header ul li a{
+    margin: 20px;
+    font-size: 25px;
+}
+.botao{
+    font-size: 25px;
+    color: white;
+    background-color: rgb(87, 87, 255);
+    padding: 15px 20px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 0.7s;
+    &:hover{
+        border-radius: 0px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: rgb(41, 41, 255);
+    }
+}
+
+/*Corpo - Principal*/
+main section#primeiro{
+    width: 100vw;
+    height: 100vh;
+    animation: PetCarro 10s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid;
+}
+main section#primeiro h2{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgba(0, 132, 255, 0.589);
+}
+main section#primeiro h2 span{
+    font-weight: 900;
+}
+
+/*Corpo - Sobre*/
+main section#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 6em;
+}
+main section#sobre h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 15px;
+}
+main section#sobre p{
+    font-size: 30px;
+    width: 60%;
+}
+
+/*Corpo - Rotina*/
+main section#rotina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+main section#rotina .escondido{
+    display: none;
+}
+main section#rotina h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+main section#rotina h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+main section#rotina a{
+    font-size: 34px;
+    font-weight: 600;
+    padding: 20px;
+}
+main section#rotina ul#petsRotina{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 0px 40px;
+}
+main section#rotina ul#petsRotina li{
+    margin: 20px;
+}
+main section#rotina ul#petsRotina li h2{
+    font-size: 30px;
+    border-bottom: 2px solid black;
+}
+main section#rotina div#petsFinalSemana{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+main section#rotina div#petsFinalSemana div#backpet{
+    height: 500px;
+    width: 100%;
+    background: url('img/CachorroDormindo.jpg')center center no-repeat;
+    background-size: cover;
+    filter: blur(7px) saturate(0.5);
+}
+main section#rotina div#petsFinalSemana div#contpet{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+}
+main section#rotina div#petsFinalSemana div#contpet h3{
+    font-weight: 400;
+    font-size: 35px;
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px black dashed;
+    border-top: 2px black dashed;
+    padding: 10px 0px;
+}
+
+/*Corpo - Contato*/
+main section#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section#contato h3{
+    font-size: 50px;
+    margin: 30px;
+    font-weight: 900;
+}
+main section#contato div#conteudoContatos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(139, 196, 247);
+    width: 70%;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+main section#contato div#conteudoContatos a{
+    font-size: 35px;
+    margin: 10px;
+    cursor: pointer;
+    transition: font-size 0.4s;
+    &:hover{
+        font-size: 40px;
+    }
+}
+main section#contato div#conteudoContatos div#barra{
+    width: 4px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+/*Footer*/
+footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+footer *{
+    color: white;
+}
+footer #finalLogo{
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer #finalLogo a{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer #frinalLogo h2{
+    font-size: 15px;
+    display: inline;
+}
+
+footer #finalLogo h2 a{
+    color:yellow;
+    display: inline;
+    cursor: pointer;
+}
+footer #contMais ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer #contMais ul li{
+    margin: 20px;
+}
+footer #contMais ul li a{
+    font-size: 20px;
+}
+
+/*Animações*/
+@keyframes PetCarro{
+    0%{
+        background: url('img/Cachorro.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    20%{
+        background: url('img/CachorroLambida.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    40%{
+        background: url('img/CachorroOculos.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    60%{
+        background: url('img/CachorroPreto.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    80%{
+        background: url('img/CachorroFilhote.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url('img/CachorroLeao.jpg') center center no-repeat;
+        background-size: cover;
+    }
+}
